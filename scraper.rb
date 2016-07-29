@@ -1,8 +1,6 @@
 require 'bundler'
 Bundler.require
-OpenURI::Cache.cache_path = '.cache'
-
-require 'open-uri'
+OpenURI::Cache.cache_path = 'archive'
 
 sections = %w(flowers-checklist fruit-veg-checklist greenhouse-checklist around-garden-checklist)
 1.upto(52) do |week_number|
